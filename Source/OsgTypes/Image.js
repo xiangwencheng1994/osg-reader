@@ -1,6 +1,6 @@
 const Promise = require('bluebird')
 const BufferData = require('./BufferData');
-const fs = require('fs');
+const fs = require('../httpfs');
 const Log = require('../Common/Log');
 
 let ReadFile = Promise.promisify(fs.readFile);

@@ -1,10 +1,10 @@
 {
-  "name": "osg-serializer-js",
+  "name": "osg-reader",
   "version": "0.0.1",
   "description": "Module for reading and writing OpenSceneGraph 3D models. file type supported: .osgb .osgt",
   "main": "Source/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node Source/test.js"
   },
   "keywords": [
     "OpenSceneGraph",
@@ -13,11 +13,20 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/eran-pinhas/osg-serializer-js.git"
+    "url": "https://github.com/xiangwencheng1994/osg-reader.git"
   },
-  "author": "Eran Pinhas",
+  "author": "Xiangweng & Eran Pinhas",
   "license": "ISC",
   "dependencies": {
-    "bluebird": "^3.5.1"
+    "bluebird": "^3.5.1",
+    "webpack": "^4.30.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "babel-loader": "^8.0.5",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.3.1",
+    "webpack-dev-server": "^3.1.14"
   }
 }

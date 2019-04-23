@@ -1,4 +1,4 @@
-const fs = require('fs');
+const fs = require('../httpfs');
 const InputStream = require('./InputStream');
 const DataTypes = require('../Common/DataTypes');
 const BinaryStreamOperator = require('./BinaryStreamOperator');

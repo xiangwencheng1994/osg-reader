@@ -123,10 +123,8 @@ class BinaryStreamOperator extends StreamOperator{
     }
 
     readBuffer(size){
-        let subBuffer = new Buffer(size);
-        this._buffer.copy(subBuffer,0,this._position,this._position+size);
         this._position += size;
-        return subBuffer;
+        return this._buffer.subBuffer(this._position - size, this._position);
     }
 }
 
